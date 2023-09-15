@@ -1,0 +1,12 @@
+@use '../../../../styles/variables.module.scss';
+
+.navitem {
+    text-decoration: none;
+    color: variables.$colorBlack;
+    padding: 10px 14px;
+    display: block;
+
+    &:hover{
+        background-color: green;
+    }
+}

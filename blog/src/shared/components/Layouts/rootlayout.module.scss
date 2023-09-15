@@ -1,0 +1,15 @@
+.pagewrapper{
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+@media(max-width: 800px) {
+    
+    .pagewrapper {
+        max-width: 95%;
+    }
+}

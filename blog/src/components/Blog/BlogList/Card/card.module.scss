@@ -1,0 +1,64 @@
+@use '../../../../styles//variables.module.scss';
+
+.cardWrapper {
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 25%;
+    display: flex;
+    // background-color: green;
+    // border: 2px solid black;
+    .card {
+
+            box-shadow: 10px 10px 17px -8px rgba(153, 138, 138, 0.44);
+            border-radius: 7px;
+            // margin: 19px 10px;
+            box-sizing: border-box;
+            // border: 2px solid black;
+    
+            .featuredImage {
+                width: 100%;
+            }
+    
+            .card-text-wrapper {
+                overflow-wrap: break-word;
+                padding: 2px 13px;
+    
+                .title {
+                    text-decoration: none;
+                    color: variables.$colorBlack;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+    
+                .description {
+                    margin: 14px 0;
+                }
+
+            }
+    
+    
+        }
+}
+
+@media(max-width: 1200px) {
+
+    .cardWrapper {
+        max-width: 33.333%;
+    }
+}
+
+
+@media(max-width: 800px) {
+
+    .cardWrapper {
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 600px) {
+    
+    .cardWrapper {
+        max-width: 100%;
+    }
+}
+

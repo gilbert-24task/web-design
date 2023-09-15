@@ -1,0 +1,62 @@
+@use '../../../styles/variables.module.scss';
+
+.nav {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: variables.$colorYellow;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+
+    .nav-item-list {
+        display: flex;
+        justify-items: center;
+        justify-content: flex-end;
+    }
+
+    .brandmenu {
+        .brandname {
+            text-decoration: none;
+        }
+        margin-right: auto;
+        margin-left: 10px;
+      
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .nav {
+
+        display: block;
+
+        .brandmenu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .nav-item-list {
+            display: none;
+        }
+
+        .burger-menu {
+            display: block;
+        }
+    }
+    
+    .expand {
+        display: block !important;
+        text-align: center;
+    }
+}

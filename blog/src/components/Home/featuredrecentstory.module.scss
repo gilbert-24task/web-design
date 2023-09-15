@@ -1,0 +1,37 @@
+
+.featuredrecentstory {
+    display: flex;
+    column-gap: 30px;
+
+    .recenthistories{
+        // background-color: yellow;
+        width: 40%;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .featuredstory{
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+   
+    .featuredrecentstory {
+        flex-direction: column;
+        row-gap: 50px;
+        column-gap: 0;
+
+        .recenthistories {
+            width: 100%;
+            overflow: visible;
+            height: auto;
+        }
+
+        .featuredstory {
+            width: 100%;
+        }
+    }
+}
